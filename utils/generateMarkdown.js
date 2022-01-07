@@ -21,7 +21,7 @@ function generateMarkdown(data) {
   return `# ${data.projectName}
   ${renderLicenseBadge(data.license)}
   
-  ## DESCRIPTION  <a id="DESCRIPTION"> DESCRIPTION</a>
+  ## <a id="DESCRIPTION"> DESCRIPTION</a>
   ${data.description}
 
   ## Project Contents
@@ -34,30 +34,30 @@ function generateMarkdown(data) {
   - [TESTS](#TESTS)
   - [LICENSE](#LICENSE)  
   
-  ## SCREENSHOT <a id="SCREENSHOT"> SCREENSHOT</a>
+  ## <a id="SCREENSHOT"> SCREENSHOT</a>
   ![screenshot](${data.screenshot})
 
-  ## INSTALLATION  <a id="INSTALLATION"> INSTALLATION</a>
+  ## <a id="INSTALLATION"> INSTALLATION</a>
   ${data.install}
 
-  ## USAGE <a id="USAGE"> USAGE</a>
+  ## <a id="USAGE"> USAGE</a>
   ${data.usage}
   
-  ## QUESTIONS <a id="QUESTIONS"> QUESTIONS</a>
+  ## <a id="QUESTIONS"> QUESTIONS</a>
   Any questions you can reach me at ${data.emailAddress} or my github page https://github.com/${data.githubName}
 
-  ## TESTS <a id="TESTS"> TESTS </a>
+  ## <a id="TESTS"> TESTS </a>
   ${data.test}
 
-  ## CONTRIBUTING <a id="CONTRIBUTING"> CONTRIBUTING</a>
+  ## <a id="CONTRIBUTING"> CONTRIBUTING</a>
   Users who contributed to this project:
- -  ${data.githubName}
+ -  https://github.com/${data.githubName}
  -  ${data.contributors}
 
 
 
 
-  ## LICENSE <a id="LICENSE"> LICENSE</a>
+  ## <a id="LICENSE"> LICENSE</a>
   
   ${data.license}
   ${renderLicenseLink(data.license)}
