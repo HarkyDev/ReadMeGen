@@ -55,7 +55,14 @@ const questions = [
     type: "list",
     name: "license",
     message: "What license are you using for this project? ",
-    choices: ["MIT","GPL","ISC"],
+    //most popular free choices according to opensource.org
+    choices: ["MIT","gpl-license","ISC","Apache-2.0","BSD-3-Clause","BSD-2-Clause","lgpl-license","MPL-2.0","CDDL-1.0","EPL-2.0"],
+  },
+  {
+    type: "list",
+    name: "licenseColor",
+    message: "What colour would you like your license badge to be?",
+    choices: ["red","green","blue"],
   },
 ];
 // TODO: Create a function to write README file
