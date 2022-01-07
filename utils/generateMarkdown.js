@@ -1,7 +1,7 @@
 // TODO: Create a function that returns a license badge based on which license is passed in
 // If there is no license, return an empty string
-function renderLicenseBadge(license,licenseColor) {
-  return `![License](https://img.shields.io/badge/License-${license}-${licenseColor}.svg)`
+function renderLicenseBadge(license) {
+  return `![License](https://img.shields.io/badge/License-${license}-red.svg)`
 }
 
 // TODO: Create a function that returns the license link
@@ -21,30 +21,53 @@ function generateMarkdown(data) {
   return `# ${data.projectName}
   ${renderLicenseBadge(data.license)}
   
-  ## PROJECT DESCRIPTION 
+  ## DESCRIPTION 
   ${data.description}
 
   ## Project Contents
-  -  ${data.description}
-  -  ${data.githubName}
-  -  ${data.emailAddress}
-  -  ${data.usage}
-  -  ${data.test}
-  -  ${data.screenshot}
-  -  ${data.install}
-  -  ${data.license}
+  - [DESCRIPTION](#DESCRIPTION)  
+  - [SCREENSHOT](#SCREENSHOT)  
+  - [INSTALLATION](#INSTALLATION)  
+  - [USAGE](#USAGE)  
+  - [CONTACT ME](#CONTACT-ME)  
+  - [LICENSE](#LICENSE)  
+  
+  ## SCREENSHOT
+  ![screenshot](${data.screenshot})
 
   ## INSTALLATION 
   ${data.install}
 
-  ## HOW TO USE THIS PROJECT
+  ## USAGE
   ${data.usage}
   
-  ## CONTRIBUTORS 
+  ## CONTACT-ME
+  Any questions you can reach me at ${data.emailAddress} or my github page https://github.com/${data.githubName}
+
+  ## CONTRIBUTORS
+  ${data.githubName}
+  ${data.contributors}
+
+
+
 
   ## LICENSE IN USE
   ${renderLicenseLink(data.license)}
+  
 `;
 }
 
 module.exports = generateMarkdown;
+
+
+// all data pulls
+// -  ${data.description}
+//   -  ${data.githubName}
+//   -  ${data.emailAddress}
+//   -  ${data.usage}
+//   -  ${data.test}
+//   -  ${data.screenshot}
+//   -  ${data.install}
+//   -  ${data.license}
+//   -  ${data.licenseColor}
+//   -  ${data.contributors}
