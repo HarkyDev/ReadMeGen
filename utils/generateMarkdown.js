@@ -31,7 +31,7 @@ function generateMarkdown(data) {
   - [USAGE](#USAGE)  
   - [CONTRIBUTING](#CONTRIBUTING)  
   - [QUESTIONS](#QUESTIONS)
-  - <a name=""/> [TESTS](#TESTS) </a>
+  - [TESTS](#TESTS)
   - [LICENSE](#LICENSE)  
   
   ## SCREENSHOT <a id="SCREENSHOT"> SCREENSHOT</a>
